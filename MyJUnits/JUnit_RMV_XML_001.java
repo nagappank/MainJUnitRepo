@@ -75,12 +75,15 @@ public class JUnit_RMV_XML_001 {
                     driver.findElement(By.id("searchbar")).sendKeys(city);
                     driver.findElement(By.xpath("//*[text()=\"Suchen\"]")).click();
                    // driver.findElement(By.xpath("//*[text()=\"Suchen\"]")).click();
-                    //
+                    
                     String results = city;
                     
                     //String comp_xpath = "//h2[contains(text(),"Treffer")]";
                     //String result_count = driver.findElement(By.xpath("//h2[contains(text(),\"Treffer\")]")).getText();
                     String result_count = driver.findElement(By.xpath("//div[@Class=\"search-box\"]/following-sibling::h2")).getText();
+                    
+                    
+                    // First Change Git
                     
             		try {
             			 
