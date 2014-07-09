@@ -51,7 +51,7 @@ public class JUnit_RMV_XML_001 {
     
     DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
     DocumentBuilder db = dbf.newDocumentBuilder();
-    Document dom = db.parse("D:\\Benutzer-Profile\\krishnanng\\git\\LocalJUnitRepo\\MyJUnits\\File001.xml");
+    Document dom = db.parse("D:\\Benutzer-Profile\\krishnanng\\git\\MainJUnitRepo\\MyJUnits\\File001.xml");
     //D:\Benutzer-Profile\krishnanng\git\LocalJUnitRepo\MyJUnits
     Element docEle = dom.getDocumentElement();
     NodeList nl = docEle.getChildNodes();
@@ -84,7 +84,8 @@ public class JUnit_RMV_XML_001 {
                     
             		try {
             			 
-            			File file = new File("D:\\Benutzer-Profile\\krishnanng\\JavaEcIDE\\workspace\\MyJUnits\\Output_Search_Results.txt");
+            			//Output report file directory changed
+            			File file = new File("D:\\Benutzer-Profile\\krishnanng\\Output_Search_Results.txt");
             			// if file doesnt exists, then create it
             			if (!file.exists()) {
             				file.createNewFile();
