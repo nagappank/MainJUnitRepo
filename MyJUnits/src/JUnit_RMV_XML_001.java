@@ -51,7 +51,8 @@ public class JUnit_RMV_XML_001 {
     
     DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
     DocumentBuilder db = dbf.newDocumentBuilder();
-    Document dom = db.parse("D:\\Benutzer-Profile\\krishnanng\\JavaEcIDE\\workspace\\MyJUnits\\File001.xml");
+    Document dom = db.parse("D:\\Benutzer-Profile\\krishnanng\\git\\LocalJUnitRepo\\MyJUnits\\File001.xml");
+    //D:\Benutzer-Profile\krishnanng\git\LocalJUnitRepo\MyJUnits
     Element docEle = dom.getDocumentElement();
     NodeList nl = docEle.getChildNodes();
     if (nl != null && nl.getLength() > 0) {
